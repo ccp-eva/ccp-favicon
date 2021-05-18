@@ -2,6 +2,12 @@
 
 The `favicon` folder contains **the six files that fit most needs** ([see here](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs))
 
+# Setup
+
+1. Copy all contents from the `favicon` directory to the root of your served directory (build, dist, www, etc.)
+2. Add [this html code](#html) to your `index.html`
+3. Profit
+
 **Resources**
 
 - https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
@@ -12,10 +18,10 @@ The `favicon` folder contains **the six files that fit most needs** ([see here](
 ## HTML
 
 ```html
-<link rel="icon" href="/favicon.ico" /><!-- 32×32 -->
-<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" /><!-- 180×180 -->
-<link rel="manifest" href="/app.webmanifest" />
+<link rel="icon" href="./favicon.ico" />
+<link rel="icon" href="./icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+<link rel="manifest" href="./app.webmanifest" />
 ```
 
 ## `favicon.ico`
